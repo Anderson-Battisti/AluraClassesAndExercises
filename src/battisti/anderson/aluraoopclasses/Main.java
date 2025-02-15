@@ -13,3 +13,10 @@ public class Main
         personAge.checkAdulthood();
     }
 }
+
+/*
+    GENERAL ANNOTATIONS
+
+    The access modifier "PROTECTED" allows a subclasses to access the attributes from
+    its mother class AND this access modifier allows to classes in the same package to access it.
+ */

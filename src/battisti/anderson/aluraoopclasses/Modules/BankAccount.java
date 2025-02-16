@@ -2,27 +2,38 @@ package battisti.anderson.aluraoopclasses.Modules;
 
 public class BankAccount
 {
-    private int accountNumber;
     private double balance;
-    public String owner;
-
-    public int getAccountNumber()
-    {
-        return accountNumber;
-    }
-
-    public void setAccountNumber( int accountNumber )
-    {
-        this.accountNumber = accountNumber;
-    }
+    private String owner;
 
     public double getBalance()
     {
-        return balance;
+        return this.balance;
     }
 
     public void setBalance( double balance )
     {
         this.balance = balance;
+    }
+
+    public void setOwner( String owner )
+    {
+        this.owner = owner;
+    }
+
+    public void withdraw( double amount )
+    {
+        if ( amount > balance )
+        {
+            balance -= amount;
+        }
+        else
+        {
+            System.out.println( "Insufficient balance" );
+        }
+    }
+
+    public void depositMoney( double amount )
+    {
+        balance += amount;
     }
 }

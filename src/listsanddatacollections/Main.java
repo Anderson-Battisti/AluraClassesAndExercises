@@ -4,6 +4,8 @@ import listsanddatacollections.interfaces.Shape;
 import listsanddatacollections.model.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main
@@ -81,5 +83,35 @@ public class Main
         {
             System.out.printf( "The area of this shape is: %.2f m²\n", shape.calculateArea() );
         }
+
+        // Exercise 4
+
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add( 54 );
+        numbers.add( 104 );
+        numbers.add( 69 );
+        numbers.add( 12 );
+        numbers.add( 29 );
+        System.out.println( "Before sort: " + numbers );
+        Collections.sort( numbers );
+        System.out.println( "After sort: " + numbers );
+
+        List<Title> titles = new ArrayList<>();
+        titles.add( new Title( "Test" ) );
+        titles.add( new Title( "Jessica" ) );
+        titles.add( new Title( "Romeu" ) );
+        titles.add( new Title( "Anderson" ) );
+        System.out.println( "Before sort: " + titles );
+        Collections.sort( titles );
+        System.out.println( "After sort: " + titles );
+
+        List<String> strings = new ArrayList<>();
+
+        strings.add( "Banana" );
+        strings.add( "Orange" );
+        strings.add( "Grape" );
+
+        strings = new LinkedList<>(strings);
+        System.out.println( strings );
     }
 }

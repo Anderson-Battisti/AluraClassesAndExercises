@@ -1,4 +1,4 @@
-package listsanddatacollections.modulefinalproject.model;
+package battisti.anderson.listsanddatacollections.modulefinalproject.model;
 
 public class CreditCard
 {

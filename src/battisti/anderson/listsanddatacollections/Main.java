@@ -1,7 +1,7 @@
-package listsanddatacollections;
+package battisti.anderson.listsanddatacollections;
 
-import listsanddatacollections.interfaces.Shape;
-import listsanddatacollections.model.*;
+import battisti.anderson.listsanddatacollections.interfaces.Shape;
+import battisti.anderson.listsanddatacollections.model.*;
 
 import java.util.ArrayList;
 import java.util.Collections;

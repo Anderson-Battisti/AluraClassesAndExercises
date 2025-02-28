@@ -1,4 +1,4 @@
-package listsanddatacollections.model;
+package battisti.anderson.listsanddatacollections.model;
 
 public class Title
     implements

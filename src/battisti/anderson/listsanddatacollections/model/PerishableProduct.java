@@ -1,4 +1,4 @@
-package listsanddatacollections.model;
+package battisti.anderson.listsanddatacollections.model;
 
 import java.util.Date;
 

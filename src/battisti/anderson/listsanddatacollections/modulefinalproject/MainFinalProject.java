@@ -1,7 +1,7 @@
-package listsanddatacollections.modulefinalproject;
+package battisti.anderson.listsanddatacollections.modulefinalproject;
 
-import listsanddatacollections.modulefinalproject.model.CreditCard;
-import listsanddatacollections.modulefinalproject.model.Product;
+import battisti.anderson.listsanddatacollections.modulefinalproject.model.CreditCard;
+import battisti.anderson.listsanddatacollections.modulefinalproject.model.Product;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +29,7 @@ public class MainFinalProject
 
             if ( myCard.getCreditLimit() >= price )
             {
-                products.add( new Product( name, price ) );
+                products.add( new  Product( name, price ) );
                 myCard.setCreditLimit( myCard.getCreditLimit() - price );
                 System.out.println( "\nThe product has been added to the list." );
                 System.out.println( "Current credit limit is " + myCard.getCreditLimit() );

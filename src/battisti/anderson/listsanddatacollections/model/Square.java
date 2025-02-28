@@ -1,6 +1,6 @@
-package listsanddatacollections.model;
+package battisti.anderson.listsanddatacollections.model;
 
-import listsanddatacollections.interfaces.Shape;
+import battisti.anderson.listsanddatacollections.interfaces.Shape;
 
 public class Square
     implements

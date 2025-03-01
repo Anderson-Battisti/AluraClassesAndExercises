@@ -1,15 +1,12 @@
 package battisti.anderson.aluraapisclasses;
 
-import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpHandlers;
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
-public class HandleGoogleAPI
+public class GoogleBooksAPI
 {
     private static HttpResponse<String> fetchBookData( String movieName ) throws Exception
     {
@@ -32,9 +29,7 @@ public class HandleGoogleAPI
 
             String bookName = reader.nextLine();
 
-            HttpResponse<String> response = fetchBookData( bookName );
-
-            System.out.println( response.body() );
+            System.out.println( fetchBookData( bookName ).body() );
         }
 
         catch ( Exception e )

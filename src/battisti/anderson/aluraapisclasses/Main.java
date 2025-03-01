@@ -8,25 +8,8 @@ import java.net.http.HttpResponse;
 
 public class Main
 {
-    public static void main( String[] args ) throws IOException, InterruptedException
+    public static void main( String[] args )
     {
-        try
-        {
-            HttpClient client = HttpClient.newHttpClient();
-
-            HttpRequest request = HttpRequest.newBuilder()
-                                             .uri( URI.create( "https://www.omdbapi.com/?t=matrix&apikey=bcabcdac" ) )
-                                             .build();
-
-            HttpResponse<String> response = client.send( request, HttpResponse.BodyHandlers.ofString() );
-
-            System.out.println( response.body() );
-        }
-        catch ( Exception e )
-        {
-            System.out.println( e.toString() );
-        }
-
-
+        HandleGoogleAPI.makeRequest();
     }
 }

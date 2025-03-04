@@ -1,4 +1,4 @@
-package battisti.anderson.aluraapisclasses;
+package battisti.anderson.aluraapisclasses.apis;
 
 import java.net.URI;
 import java.net.http.HttpClient;

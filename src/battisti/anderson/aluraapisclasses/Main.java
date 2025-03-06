@@ -1,10 +1,14 @@
 package battisti.anderson.aluraapisclasses;
 
+import battisti.anderson.aluraapisclasses.apis.GitHubAPI;
 import battisti.anderson.aluraapisclasses.apis.GoogleBooksAPI;
 import battisti.anderson.aluraapisclasses.apis.TheMealDBAPI;
 import battisti.anderson.aluraapisclasses.model.Book;
 import battisti.anderson.aluraapisclasses.model.Person;
 import com.google.gson.Gson;
+
+import java.net.http.HttpClient;
+import java.util.Scanner;
 
 public class Main
 {
@@ -47,5 +51,8 @@ public class Main
         Book myBook     = nestedGson.fromJson( nestedJson, Book.class );
 
         System.out.println( myBook );
+
+        // Exercise consuming GitHub API
+        GitHubAPI.makeRequest();
     }
 }

@@ -3,18 +3,13 @@ package battisti.anderson.aluraapisclasses;
 import battisti.anderson.aluraapisclasses.apis.GitHubAPI;
 import battisti.anderson.aluraapisclasses.apis.GoogleBooksAPI;
 import battisti.anderson.aluraapisclasses.apis.TheMealDBAPI;
+import battisti.anderson.aluraapisclasses.controllers.FileController;
 import battisti.anderson.aluraapisclasses.model.Book;
 import battisti.anderson.aluraapisclasses.model.Movie;
 import battisti.anderson.aluraapisclasses.model.Person;
 import battisti.anderson.aluraapisclasses.model.Vehicle;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.net.http.HttpClient;
-import java.util.Scanner;
 
 public class Main
 {
